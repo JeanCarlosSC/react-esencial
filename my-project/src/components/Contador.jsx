@@ -1,5 +1,5 @@
-import React, {Component} from "react";
-
+import React, {useState} from 'react';
+/*
 export default class Contador extends Component {
     constructor(props) {
         super(props);
@@ -29,3 +29,26 @@ export default class Contador extends Component {
         );
     }
 }
+*/
+const Contador = () => {
+    const [conteo, setConteo] = useState(0);
+    
+    const incrementar = () => {
+        setConteo((prevConteo) => prevConteo + 1);
+    };
+    
+    const reducir = () => {
+        setConteo((prevConteo) => prevConteo - 1);
+    };
+
+    return (
+        <div>
+            <h1>Contador de clicks</h1>
+            <p>Conteo: {conteo}</p>
+            <button onClick={incrementar}>Incrementar</button>
+            <button onClick={reducir}>Reducir</button>
+        </div>
+    );
+}
+
+export default Contador;

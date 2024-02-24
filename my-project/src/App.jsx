@@ -1,11 +1,9 @@
 import './App.css'
-// import MyButton from './components/MyButton.jsx'
-import Contador from './components/Contador.jsx'
+import Contador from './components/Contador'
 
 function App() {
   return (
     <>
-      {/* <MyButton text={"Hola React"}/> */}
       <Contador/>
     </>
   )
