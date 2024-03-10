@@ -1,10 +1,11 @@
 import './App.css'
+import Button from './components/Button'
 import Contador from './components/Contador'
 
 function App() {
   return (
     <>
-      <Contador/>
+      <Button text='Iniciar sesión'/>
     </>
   )
 }

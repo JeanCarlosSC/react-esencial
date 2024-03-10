@@ -1,5 +1,5 @@
 
-export default function MyButton({text}) {
+export default function Button({text}) {
     return (
         <>
             <button>{text}</button>
